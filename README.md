@@ -142,3 +142,10 @@ https://www.linkedin.com/in/sakshi-b-s-050093290
 ## License
 
 This project is intended for learning and educational purposes.
+# AI Email Reply Assistant
+
+An AI-powered web application that helps users generate professional email replies using AI.
+
+## Screenshot
+
+![Login Page](assets/login.png)
