@@ -1,0 +1,378 @@
+.generate-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.compose-panel,
+.reply-panel {
+  background: white;
+  padding: 26px;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.compose-panel h3,
+.reply-panel h3 {
+  margin: 0 0 18px;
+  font-size: 22px;
+}
+
+.compose-panel label {
+  display: block;
+  font-weight: 700;
+  margin: 14px 0 8px;
+  color: #374151;
+}
+
+.compose-panel input,
+.compose-panel textarea,
+.compose-panel select,
+.reply-editor {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  padding: 13px 14px;
+  outline: none;
+  font-size: 15px;
+  background: #f9fafb;
+}
+
+.compose-panel input:focus,
+.compose-panel textarea:focus,
+.compose-panel select:focus,
+.reply-editor:focus {
+  border-color: #2563eb;
+  background: white;
+}
+
+.large-textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.primary-action {
+  width: 100%;
+  margin-top: 22px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.primary-action:hover {
+  background: #1d4ed8;
+}
+
+.reply-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply-header p {
+  margin: -10px 0 18px;
+  color: #6b7280;
+}
+
+.reply-editor {
+  min-height: 430px;
+  resize: vertical;
+  line-height: 1.7;
+}
+
+.reply-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.reply-actions button {
+  border: none;
+  background: #eef2ff;
+  color: #1d4ed8;
+  padding: 11px 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.reply-actions button:hover {
+  background: #dbeafe;
+}
+
+.reply-actions .send-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.reply-actions .send-btn:hover {
+  background: #15803d;
+}
+
+@media (max-width: 1100px) {
+  .generate-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}
+.secondary-action {
+  width: 100%;
+  margin-top: 14px;
+  border: none;
+  background: #eef2ff;
+  color: #1d4ed8;
+  padding: 13px;
+  border-radius: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.secondary-action:hover {
+  background: #dbeafe;
+}
+
+.summary-card {
+  margin-top: 18px;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.summary-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.summary-head h3 {
+  margin: 0;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summary-head p {
+  margin: 5px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.summary-head button {
+  border: none;
+  background: white;
+  color: #1d4ed8;
+  padding: 9px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.summary-body {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #334155;
+}
+.subject-row {
+  display: flex;
+  gap: 8px;
+}
+
+.subject-row input {
+  flex: 1;
+}
+
+.subject-row button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 0 14px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.action-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.reply-options-section {
+  margin-top: 24px;
+}
+
+.reply-options-section h3 {
+  margin-bottom: 14px;
+}
+
+.reply-option-card {
+  background: #ffffff;
+  border: 1px solid #dbeafe;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+
+.reply-option-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.reply-option-head h4 {
+  margin: 0;
+  color: #1d4ed8;
+}
+
+.reply-option-head button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 9px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.reply-option-card p {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+}
+.quality-card {
+  margin-top: 20px;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.quality-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.quality-top h3 {
+  margin: 0;
+  color: #1d4ed8;
+}
+
+.quality-top p {
+  margin: 6px 0 0;
+  color: #64748b;
+}
+
+.overall-score {
+  min-width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: white;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 10px 26px rgba(37, 99, 235, 0.25);
+}
+
+.overall-score span {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.overall-score small {
+  font-weight: 800;
+  margin-top: -24px;
+}
+
+.quality-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.quality-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+  font-weight: 800;
+  color: #334155;
+}
+
+.progress-track {
+  height: 11px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #16a34a);
+  border-radius: 999px;
+}
+
+.quality-suggestions {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.quality-suggestions h4 {
+  margin: 0 0 10px;
+}
+
+.quality-suggestions p {
+  margin: 7px 0;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.analyze-btn {
+  background: #7c3aed !important;
+  color: white !important;
+}
+
+.analyze-btn:hover {
+  background: #6d28d9 !important;
+}

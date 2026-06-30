@@ -1,0 +1,51 @@
+.settings-card {
+  max-width: 720px;
+  background: white;
+  padding: 28px;
+  border-radius: 24px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+}
+
+.settings-card h3 {
+  margin: 0 0 22px;
+  font-size: 24px;
+}
+
+.settings-card label {
+  display: block;
+  font-weight: 800;
+  margin: 14px 0 8px;
+}
+
+.settings-card select,
+.settings-card textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 14px;
+  background: #f9fafb;
+  outline: none;
+}
+
+.settings-card textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.settings-card select:focus,
+.settings-card textarea:focus {
+  background: white;
+  border-color: #2563eb;
+}
+
+.settings-card button {
+  margin-top: 20px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 13px 18px;
+  border-radius: 14px;
+  font-weight: 800;
+  cursor: pointer;
+}
